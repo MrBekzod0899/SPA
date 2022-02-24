@@ -1,0 +1,116 @@
+header {
+    position: fixed;
+    background: rgba(189, 187, 187, 0.24);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    transition: .1s ease;
+  }
+  
+header.sticky {
+    background: rgba(61, 61, 61, 0.753);
+    padding: 10px 100px;
+}
+  
+  header .brand {
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  header .brand:hover{
+      color: #116a88;
+  }
+  header .navigation {
+    position: relative;
+  }
+  
+  header .navigation a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 30px;
+    position: relative;
+    font-size: 20px;
+    padding: 4px;
+  }
+  .navigation a:hover{
+    color: red;
+  }
+  
+
+
+/* media */
+
+@media (max-width: 965px) {
+    header {
+      padding: 12px 20px;
+    }
+    header.sticky {
+      padding: 10px 20px;
+    }
+    header .navigation {
+      display: none;
+    }
+    header .navigation.active {
+      z-index: 888;
+      position: fixed;
+      background: #010416;
+      opacity: 0.95;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: .3s ease;
+     
+    }
+  
+    header .navigation a {
+      color:  white;
+      font-size: 22px;
+      margin: 10px;
+      padding: 0 20px;
+      border-radius: 20px;
+    
+    }
+  
+    header .navigation a:hover {
+      color: #fff;
+    }
+
+    .menu-btn {
+        position: absolute;
+        background: url(../../asset/menu.png) no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: .4s ease;
+      }
+    
+      .menu-btn.active {
+        z-index: 999;
+        background: url(../../asset/close5.png) no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: .3s ease;
+        filter: invert(1);   
+        background-color: transparent;
+      }
+    
+}
+  

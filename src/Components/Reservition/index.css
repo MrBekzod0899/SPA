@@ -1,0 +1,30 @@
+.reservation{
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin:40px 0;
+}
+.reservation .row{
+    display: flex;
+    justify-content: center;
+}
+.reservation  #people{
+    height: 40px;
+    width: 50%;
+}
+.reservation #time{
+    height: 40px !important;
+    width: 50%;
+    height: 40px !important;
+    margin-left: 10px !important;
+    
+}
+.reservation .row .col-lg-6 .card{
+    background-color: #f7f7f7;
+}
+.reservation .row .card-body{
+    display: flex;
+    justify-content: space-between;
+}
+
