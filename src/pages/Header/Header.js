@@ -59,12 +59,12 @@ export default function Header() {
       
     return (
         <>
+            <header>
             <div className="scrollToTop-btn">
                 <i className="fas fa-angle-up"></i>
             </div>
-            <header>
                 <a href="#!" className="brand">
-                  <img style={{width:'60px',height:'60px',backgroundColor:'transparent'}} src={logo} alt="logo"/>
+                  <img style={{width:'0px',height:'60px',backgroundColor:'transparent'}} src={logo} alt="logo"/>
                   <span>Fresh Food</span>
                 </a>
                 <div onClick={activeBtn} className="menu-btn"></div>
@@ -74,7 +74,7 @@ export default function Header() {
                     <a href="#stuff">stuff</a>
                     <a href="#order">order</a>
                     <a href="#contact">Contact</a>
-                    <a href="#login">Sign In</a>
+                    <a href="#login">Login</a>
                 </div>
             </header>
         </>

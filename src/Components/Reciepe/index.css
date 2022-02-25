@@ -1,0 +1,27 @@
+.recipe{
+    padding: 50px;
+    justify-content: center;
+}
+.product{
+    width: 500px !important;
+    height: 440px !important;
+    background: #fff;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.25);
+    position: relative;
+    overflow: hidden;
+
+}
+.product-image{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.product-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center center;
+}

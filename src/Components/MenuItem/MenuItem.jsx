@@ -1,8 +1,10 @@
 import Aos from 'aos'
 import React from 'react'
+import { Link } from 'react-router-dom'
 export default function MenuItem(props) {
     const {strCategory,strCategoryDescription,strCategoryThumb}=props
     Aos.init()
+   
   return (
     <div data-aos="zoom-in-right"  className='menuitem card' style={{width:'100%'}}>
         <div className="card-body">
@@ -16,8 +18,9 @@ export default function MenuItem(props) {
             {strCategoryDescription.length>100 && '...'}
             </p>
            { strCategoryDescription.length>100 && <p><a className='text-primary' href="#!"  >Read more</a></p>}
-            
-            <button data-aos="zoom-up" className='btn btn-outline-success'>See More</button>
+            <Link to={`/category/${strCategory}`} className="btn">
+                Watch Category
+            </Link>
         </div>
     </div>
   )

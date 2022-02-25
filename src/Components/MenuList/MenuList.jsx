@@ -11,7 +11,7 @@ export default function MenuList({category}) {
                     category ? 
                     (
                         category.map((item,index)=>(
-                            <MenuItem data-aos='zoom-in' {...item}/>
+                            <MenuItem key={index} data-aos='zoom-in' {...item}/>
                         ))
                     ):<h1>Nothing Found</h1>
                 }

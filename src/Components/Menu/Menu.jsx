@@ -2,9 +2,9 @@ import React, { useEffect,useState} from 'react'
 import { getListCategories } from '../../api';
 import MenuList from '../MenuList/MenuList';
 import './index.css'
+
 export default function Menu() {
     const [category, setCategory] = useState([]);
-
     useEffect(() => {
       getListCategories().then(data=>setCategory(data.categories))
     }, []);

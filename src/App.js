@@ -1,21 +1,16 @@
-import Header from "./pages/Header";
-import Footer from "./pages/Footer"
 import Main from "./pages/Main";
-import Menu from './Components/Menu'
-import Stuff from "./Components/Stuff/Stuff";
-import Reservation from "./Components/Reservition/Reservation";
-import Contact from "./Components/Contact/Contact";
+import { Route, Switch } from "react-router-dom";
+import Category from "./pages/Category/Category"; 
+import Reciepe from "./Components/Reciepe/Reciepe";
 
 function App() {
   return (
     <div className="App">
-       <Header/>
-        <Main/>
-        <Menu/>
-        <Stuff/>
-        <Reservation/>
-        <Contact/>
-       <Footer/>
+      <Switch>
+        <Route exact path='/' component={Main}/>
+        <Route path="/category/:name" component={Category}/>
+        <Route path="/:id" component={Reciepe}/>
+      </Switch>
      </div>
   );
 }

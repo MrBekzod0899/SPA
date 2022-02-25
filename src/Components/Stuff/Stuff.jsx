@@ -1,6 +1,5 @@
 import Aos from 'aos'
 import React from 'react'
-import chief1 from '../../asset/chief5.jpg'
 import person1 from '../../asset/person1.jpg'
 import person2 from '../../asset/person2.jpg'
 import person3 from '../../asset/person3.jpg'
@@ -44,7 +43,7 @@ export default function Stuff() {
                                     <img className="img-fluid" src={person1} alt="chief1" />
                                 </div>
                                 <div className="card-content">
-                                    <h1 data-aos="fade-up">Main Chief</h1>
+                                    <h1 data-aos="fade-up">Cake Chief</h1>
                                     <p data-aos="fade-up">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
                                     </p>
@@ -55,7 +54,7 @@ export default function Stuff() {
                                     <img className="img-fluid" src={person2} alt="chief1" />
                                 </div>
                                 <div className="card-content">
-                                    <h1 data-aos="fade-up">Main Chief</h1>
+                                    <h1 data-aos="fade-up">Assistent Chief</h1>
                                     <p data-aos="fade-up">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
                                     </p>
@@ -66,7 +65,7 @@ export default function Stuff() {
                                     <img className="img-fluid" src={person4} alt="chief1" />
                                 </div>
                                 <div className="card-content">
-                                    <h1 data-aos="fade-up">Main Chief</h1>
+                                    <h1 data-aos="fade-up">Salat Chief </h1>
                                     <p data-aos="fade-up">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
                                     </p>
