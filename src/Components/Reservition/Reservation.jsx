@@ -8,7 +8,6 @@ import './index.css'
 export default function Reservation() {
     const [order, setOrder] = useState({time:new Date(),day:new Date().getDay(),people:1});
     console.log(order)
-
     return (
         <div id="order" className='reservation'>
             <div className="container">

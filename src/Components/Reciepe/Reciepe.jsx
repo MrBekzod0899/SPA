@@ -3,7 +3,6 @@ import { getFullDetails } from "../../api";
 import './index.css'
 import Loader from "../Loader/Loader";
 
-
 export default function Reciepe({ id, open,handleOpen}) {
   const [recipe, setRecipe] = useState([])
   const [loading, setLoading] = useState(true)
