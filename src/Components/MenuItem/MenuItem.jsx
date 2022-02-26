@@ -17,7 +17,6 @@ export default function MenuItem(props) {
             <p data-aos="fade-up">{strCategoryDescription.slice(0,100)}
             {strCategoryDescription.length>100 && '...'}
             </p>
-           { strCategoryDescription.length>100 && <p><a className='text-primary' href="#!"  >Read more</a></p>}
             <Link to={`/category/${strCategory}`} className="btn">
                 Watch Category
             </Link>

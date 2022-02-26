@@ -1,16 +1,17 @@
 import Aos from 'aos'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React,{useState} from 'react'
+import Reciepe from '../../Components/Reciepe/Reciepe'
 
 export default function CategoryItem({elem}) {
     const {idMeal,strMeal,strMealThumb}=elem
+    const [open,setOpen]=useState(false)
   Aos.init({
     once: true,
-    duration:2000
+    duration:500
   })
   return (
     <>
-      <div data-aos="flip-right" className="product">
+      <div data-aos="flip-right" className="product" >
         <div data-aos="fade-down" className="product-image">
           <img src={strMealThumb} alt="product" />
         </div>
@@ -28,12 +29,16 @@ export default function CategoryItem({elem}) {
             </span>
           </div>
           <div className="product-action">
-            <Link className="btn" to={`/${idMeal}`}>
+            <button  className="btn btn-primary" onClick={()=>setOpen(!open)}>
                  See Ingridient
-            </Link>
+            </button>
           </div>
         </div>
       </div>
+      {
+          open &&
+          <Reciepe handleOpen={setOpen} id={idMeal} open={open}/>
+      }
     </>
   )
 }

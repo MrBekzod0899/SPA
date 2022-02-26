@@ -1,14 +1,11 @@
-import React, { useEffect,useState} from 'react'
-import { getListCategories } from '../../api';
+import React, { useContext} from 'react'
+
+import { LoadingContext } from '../../pages/Main/Main';
 import MenuList from '../MenuList/MenuList';
 import './index.css'
 
 export default function Menu() {
-    const [category, setCategory] = useState([]);
-    useEffect(() => {
-      getListCategories().then(data=>setCategory(data.categories))
-    }, []);
-
+    const category=useContext(LoadingContext)  
   return (
     <div id="menu" className="menu pt-4">
         <div className="container">

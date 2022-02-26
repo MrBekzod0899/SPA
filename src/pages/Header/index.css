@@ -1,6 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+.btns {
+	display: block;
+	width: 400px;
+	margin: 0;
+	padding: 30px 0 0 30px;
+}
+.btns a {
+	display: inline-block;
+	margin-left: 5px;
+}
+.btns a:first-child{margin-left:0}
+.btn {
+	font-family: sans-serif;
+	font-size: 14px;
+	font-weight: 600;
+	color: #ecf0f1;
+	text-decoration: none;
+}
+a .btn {
+	cursor: pointer;
+	border: 1.5px solid #ecf0f1;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px;
+	list-style-type: none;
+	transition: all .3s;
+}
+
+.btn:hover {
+	background: #ecf0f1;
+	color: #34495e;
+}
+
+
 header {
     position: fixed;
-    background: rgba(189, 187, 187, 0.24);
+    background-color: #010416b4;
     top: 0;
     left: 0;
     width: 100%;
@@ -16,7 +57,6 @@ header.sticky {
     background: rgba(61, 61, 61, 0.753);
     padding: 10px 100px;
 }
-  
   header .brand {
     font-size: 30px;
     color: white;
@@ -50,6 +90,7 @@ header.sticky {
 @media (max-width: 965px) {
     header {
       padding: 12px 20px;
+      
     }
     header.sticky {
       padding: 10px 20px;
@@ -82,7 +123,6 @@ header.sticky {
       margin: 10px;
       padding: 0 20px;
       border-radius: 20px;
-    
     }
   
     header .navigation a:hover {

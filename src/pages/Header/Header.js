@@ -59,10 +59,10 @@ export default function Header() {
       
     return (
         <>
+            <div className="scrollToTop-btn d-none">
+                  <i className="fas fa-angle-up"></i>
+              </div>
             <header>
-            <div className="scrollToTop-btn">
-                <i className="fas fa-angle-up"></i>
-            </div>
                 <a href="#!" className="brand">
                   <img style={{width:'0px',height:'60px',backgroundColor:'transparent'}} src={logo} alt="logo"/>
                   <span>Fresh Food</span>
