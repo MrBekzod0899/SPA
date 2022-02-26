@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import { getFullDetails } from "../../api";
 import './index.css'
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
 import Loader from "../Loader/Loader";
-import { Button, ModalBody, ModalHeader } from "reactstrap";
-import { ModalFooter } from "react-bootstrap";
 
 
 export default function Reciepe({ id, open,handleOpen}) {
@@ -41,17 +37,23 @@ export default function Reciepe({ id, open,handleOpen}) {
                 </tr>
               </thead>
               <tbody>
-                {Object.keys(recipe).map((key, index) => {
-                  if (key.includes('Ingredient') && recipe[key]) {
-                    return (
-                      <tr key={index} className="tBodyReciepe">
-                        <td>{recipe[key]}</td>
-                        <td><img width={150} height={150} src={`https://www.themealdb.com/images/ingredients/${recipe[key]}.png`} alt='ingridient' /></td>
-                        <td>{recipe[`strMeasure${key.slice(13)}`]}</td>
-                      </tr>
-                    )
-                  }
-                })}
+                {
+                 Object.keys(recipe).map((key,index) => {
+                    if (key.includes('Ingredient') && recipe[key]) {
+                      return (
+                        <tr key={index} className="tBodyReciepe">
+                          <td>{recipe[key]}</td>
+                          <td><img width={150} height={150} src={`https://www.themealdb.com/images/ingredients/${recipe[key]}.png`} alt='ingridient' /></td>
+                          <td>{recipe[`strMeasure${key.slice(13)}`]}</td>
+                        </tr>
+                      )  
+                    }
+                    else{
+                      return null
+                    }
+                   }
+                  )
+                }
               </tbody>
             </table>
           </div>

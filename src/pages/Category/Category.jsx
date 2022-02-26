@@ -20,7 +20,6 @@ getFilterCategoria(name).then(res => {
     setLoading(false)
 })
 }, [name]);
-
 return (
 <div>
     {
@@ -44,7 +43,6 @@ return (
     <Footer/>
     </>
     }
-
 </div>
 )
 }

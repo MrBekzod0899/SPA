@@ -35,8 +35,7 @@ export default function Main() {
         <Contact/>
         <Footer/>
         </>
-      }
-      
+      }   
     </LoadingContext.Provider>
    
   )
